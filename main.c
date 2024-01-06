@@ -145,22 +145,8 @@ GPIOE->MODER &=~ GPIO_MODER_MODE12_1;
 GPIOE->MODER &=~ GPIO_MODER_MODE13_1;
 GPIOE->MODER &=~ GPIO_MODER_MODE14_1;
 GPIOE->MODER &=~ GPIO_MODER_MODE15_1;
-	
-	//GPIOE->ODR &=~ GPIO_ODR_OD10;
-	//lcd_init();
-	//lcd_clear(); 
-  //lcd_put_cur(0, 0);	
-  //lcd_send_string("1234567890");
-	//lcd_put_cur(0, 7);
-  //lcd_send_string("WORLD ");
-	//lcd_put_cur(0, 14);
-  //lcd_send_string("FROM");
-  //delay(100000);
-  //lcd_put_cur(1, 7);
-  //lcd_send_string("CONTROLLERSTECH");
-  //delay(200000);
-  //lcd_clear(); 		
-	RCC->AHB1ENR|=RCC_AHB1ENR_GPIOBEN;
+
+RCC->AHB1ENR|=RCC_AHB1ENR_GPIOBEN;
 	
 	
 	initPort();
